@@ -9,7 +9,7 @@
         "purpose": "any maskable"
       }
     ],
-    "start_url": "netos.test.html",
+    "start_url": "../netos.test.html",
     "background_color": "#3367D6",
     "display": "fullscreen",
     "scope": "/",
@@ -19,14 +19,14 @@
         "name": "How's weather today?",
         "short_name": "Today",
         "description": "View weather information for today",
-        "url": "/today?source=pwa",
+        "url": "/NetOS/netos.test.html/today?source=pwa",
         "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512" }]
       },
       {
         "name": "How's weather tomorrow?",
         "short_name": "Tomorrow",
         "description": "View weather information for tomorrow",
-        "url": "/tomorrow?source=pwa",
+        "url": "/NetOS/netos.test.html/tomorrow?source=pwa",
         "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512", "purpose": "any maskable" }]
       }
     ],
