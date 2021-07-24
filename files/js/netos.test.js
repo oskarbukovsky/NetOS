@@ -27,6 +27,11 @@
 console.log(`Is scope strict: ${(function () { return !this; })()}`);
 
 //PWA
+/* Only register a service worker if it's supported */
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./files/js/service-worker.js');
+}
+
 window.addEventListener('beforeinstallprompt', (event) => {
     console.log('👍', 'beforeinstallprompt', event);
     // Stash the event so it can be triggered later.
