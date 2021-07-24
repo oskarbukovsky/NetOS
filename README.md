@@ -47,21 +47,9 @@ Dillinger uses a number of open source projects to work properly:
 to Markdown converter
 - [jQuery] - duh
 
-| Plugin | README |
-| ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] :white_check_mark:|
-| GitHub | [plugins/github/README.md][PlGh] :heavy_check_mark:|
-| Google Drive | [plugins/googledrive/README.md][PlGd] :x:|
-| OneDrive | [plugins/onedrive/README.md][PlOd] :black_square_button:|
-| Medium | [plugins/medium/README.md][PlMe] :black_square_button:|
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] :white_large_square:|
-
 This will create the dillinger image and pull in the necessary dependencies.
 Be sure to swap out `${package.json.version}` with the actual
 version of Dillinger.
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
 
    [dill]: <https://github.com/joemccann/dillinger>
    [git-repo-url]: <https://github.com/joemccann/dillinger.git>
@@ -81,6 +69,20 @@ version of Dillinger.
    https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow
    https://img.shields.io/github/forks/Sangwan5688/BlackHole.svg?style=social&label=Forks
 -------
+
+Support
+-----------
+
+| Browser | Support |
+| ------ | ------ |
+| Edge    | :white_check_mark: >= 81|
+| Chrome  | :white_check_mark: >= 85|
+| Firefox | :white_check_mark: >= 72|
+| Opera   | :white_check_mark: >= 71|
+| Safari  | :x:|
+| Yandex  | :x:|
+
+> Lower browser versions may work, but this has not been tested yet.
 
 Installation
 -----------
