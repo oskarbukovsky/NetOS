@@ -1,9 +1,9 @@
 NetOS
 =============
 
-   ![alt text](https://img.shields.io/github/stars/oskarbukovsky/NetOS.svg?style=social&label=Star)
-   ![alt text](https://img.shields.io/github/forks/oskarbukovsky/NetOS.svg?style=social&label=Forks)
-   ![alt text](https://img.shields.io/github/followers/oskarbukovsky.svg?style=social&label=Follow)
+   ![Stars](https://img.shields.io/github/stars/oskarbukovsky/NetOS.svg?style=social&label=Star)
+   ![Forks](https://img.shields.io/github/forks/oskarbukovsky/NetOS.svg?style=social&label=Forks)
+   ![Follow](https://img.shields.io/github/followers/oskarbukovsky.svg?style=social&label=Follow)
 
 
 Technology
@@ -112,3 +112,10 @@ let environment = new NetOS({
     $loadModules: [{login:true}]
 });
 ```
+
+Demo
+-----
+
+[![Demo](https://raw.githubusercontent.com/oskarbukovsky/NetOS/main/files/imgs/demo.PNG)](https://oskarbukovsky.github.io/NetOS/netos-old.html)
+
+> Click to image to view demo
