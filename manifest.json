@@ -49,7 +49,7 @@
     ],
     "protocol_handlers": [
       {
-        "protocol": "netos",
+        "protocol": "web+netos",
         "url": "/NetOS/netos.test.html?source=protocol&data=%s"
       }
     ]
