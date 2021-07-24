@@ -35,6 +35,7 @@
       {
         "name": "Google",
         "short_name": "NetOS",
+        "_comment": "Na samsungu je short",
         "description": "NetOS client",
         "url": "/NetOS/netos.test.html?source=pwa2",
         "icons": [

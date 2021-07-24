@@ -4,8 +4,6 @@ self.addEventListener('install', function (event) {
     caches.open('static')
       .then(function (cache) {
         // cache.add('/');
-        // cache.add('/index.html');
-        // cache.add('/src/js/app.js');
         cache.addAll([
           '.'
         ]);
@@ -18,6 +16,7 @@ self.addEventListener('activate', function () {
 });
 
 self.addEventListener('fetch', function(event) {
+  console.log("SW Fetch");
   event.respondWith(
     caches.match(event.request)
       .then(function(res) {
