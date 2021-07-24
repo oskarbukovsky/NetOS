@@ -18,13 +18,20 @@ const CACHE_NAME = 'offline';
 // Customize this with a different URL if needed.
 const OFFLINE_URL = 'offline.html';
 
-self.addEventListener('install', (event) => {
-  event.waitUntil((async () => {
-    const cache = await caches.open(CACHE_NAME);
-    // Setting {cache: 'reload'} in the new request will ensure that the response
-    // isn't fulfilled from the HTTP cache; i.e., it will be from the network.
-    await cache.add(new Request(OFFLINE_URL, {cache: 'reload'}));
-  })());
+
+self.addEventListener('install', function (event) {
+  console.log('SW Installed');
+  event.waitUntil(
+    caches.open('static')
+      .then(function (cache) {
+        // cache.add('/');
+        // cache.add('/index.html');
+        // cache.add('/src/js/app.js');
+        cache.addAll([
+          '/NetOS/files/'
+        ]);
+      })
+  );
 });
 
 self.addEventListener('activate', (event) => {
@@ -40,26 +47,8 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-/*
-self.addEventListener('install', function (event) {
-  console.log('SW Installed');
-  event.waitUntil(
-    caches.open('static')
-      .then(function (cache) {
-        // cache.add('/');
-        // cache.add('/index.html');
-        // cache.add('/src/js/app.js');
-        cache.addAll([
-          '/NetOS/public/',
-          '/NetOS/public/index.html',
-          '/NetOS/public/src/js/app.js',
-          '/NetOS/public/src/css/app.css',
-          '/NetOS/public/src/images/pwa.jpg',
-          'https://fonts.googleapis.com/css?family=Raleway:400,700'
-        ]);
-      })
-  );
-});*/
+
+
 
 self.addEventListener('fetch', function(event) {
   event.respondWith(
