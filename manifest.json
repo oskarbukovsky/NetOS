@@ -1,5 +1,5 @@
 {
-    "name": "NetOS",
+    "name": "NetOS client",
     "short_name": "NetOS",
     "description": "NetOS client",
     "start_url": "netos.test.html?source=pwa",
@@ -19,9 +19,9 @@
     ],
     "shortcuts": [
       {
-        "name": "NetOS shortcut1",
-        "short_name": "NetOS1",
-        "description": "NetOS client 1",
+        "name": "Clean screen",
+        "short_name": "NetOS",
+        "description": "NetOS client",
         "url": "/NetOS/netos.test.html?source=pwa1",
         "icons": [
           {
@@ -33,9 +33,9 @@
         ]
       },
       {
-        "name": "NetOS shortcut2",
-        "short_name": "NetOS2",
-        "description": "NetOS client2",
+        "name": "Google",
+        "short_name": "NetOS",
+        "description": "NetOS client",
         "url": "/NetOS/netos.test.html?source=pwa2",
         "icons": [
           {
@@ -45,6 +45,12 @@
             "purpose": "any maskable"
           }
         ]
+      }
+    ],
+    "protocol_handlers": [
+      {
+        "protocol": "netos",
+        "url": "/NetOS/netos.test.html?source=protocol&data=%s"
       }
     ]
   }
