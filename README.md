@@ -1,7 +1,7 @@
 NetOS
 =============
 
-```
+-------
 .md help text :)
 This library is the **first step** of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:
 
@@ -16,7 +16,6 @@ Please note that **only the first step** is covered by this gem — the rest hap
 Please see our [contributing guidelines](CONTRIBUTING.md) before reporting an issue.
 
 Markups
--------
 
 The following markups are supported.  The dependencies listed are required if
 you wish to run the library. You can also run `script/bootstrap` to fetch them all.
@@ -53,7 +52,7 @@ to Markdown converter
 | Dropbox | [plugins/dropbox/README.md][PlDb] :white_check_mark:|
 | GitHub | [plugins/github/README.md][PlGh] :heavy_check_mark:|
 | Google Drive | [plugins/googledrive/README.md][PlGd] :x:|
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
+| OneDrive | [plugins/onedrive/README.md][PlOd] :black_square_button:|
 | Medium | [plugins/medium/README.md][PlMe] |
 | Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
 
@@ -81,7 +80,7 @@ version of Dillinger.
    https://img.shields.io/github/stars/oskarbukovsky/NetOS.svg?style=social&label=Star
    https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow
    https://img.shields.io/github/forks/Sangwan5688/BlackHole.svg?style=social&label=Forks
-```
+-------
 
 Installation
 -----------
