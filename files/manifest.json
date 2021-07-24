@@ -9,7 +9,7 @@
     "theme_color": "#0033dd",
     "icons": [
       {
-        "src": "/NetOS/files/imgs/icon_512x512.png",
+        "src": "/NetOS/files/imgs/icon-512x512.png",
         "sizes": "512x512",
         "type": "image/png",
         "purpose": "any maskable"
@@ -23,7 +23,7 @@
         "url": "/NetOS/netos.test.html?source=pwa1",
         "icons": [
           {
-            "src": "/NetOS/files/imgs/icon_512x512.png",
+            "src": "/NetOS/files/imgs/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"
@@ -37,7 +37,7 @@
         "url": "/NetOS/netos.test.html?source=pwa2",
         "icons": [
           {
-            "src": "/NetOS/files/imgs/icon_512x512.png",
+            "src": "/NetOS/files/imgs/icon-512x512.png",
             "sizes": "512x512",
             "type": "image/png",
             "purpose": "any maskable"
