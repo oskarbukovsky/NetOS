@@ -1,92 +1,41 @@
 NetOS
 =============
 
-```
-.md help text :)
-This library is the **first step** of a journey that every markup file in a repository goes on before it is rendered on GitHub.com:
+   ![alt text](https://img.shields.io/github/stars/oskarbukovsky/NetOS.svg?style=social&label=Star)
+   ![alt text](https://img.shields.io/github/forks/oskarbukovsky/NetOS.svg?style=social&label=Forks)
+   ![alt text](https://img.shields.io/github/followers/oskarbukovsky.svg?style=social&label=Follow)
 
-1. `github-markup` selects an _underlying library_ to convert the raw markup to HTML. See the list of [supported markup formats](#markups) below.
-1. The HTML is sanitized, aggressively removing things that could harm you and your kin—such as `script` tags, inline-styles, and `class` or `id` attributes.
-1. Syntax highlighting is performed on code blocks. See [github/linguist](https://github.com/github/linguist#syntax-highlighting) for more information about syntax highlighting.
-1. The HTML is passed through other filters that add special sauce, such as emoji, task lists, named anchors, CDN caching for images, and autolinking.
-1. The resulting HTML is rendered on GitHub.com.
 
-Please note that **only the first step** is covered by this gem — the rest happens on GitHub.com.  In particular, `markup` itself does no sanitization of the resulting HTML, as it expects that to be covered by whatever pipeline is consuming the HTML.
+Technology
+-----------
 
-Please see our [contributing guidelines](CONTRIBUTING.md) before reporting an issue.
+- [Font Awesome](https://fontawesome.com/) - Awesome font gadgets `5.15.2`
+- [jQuery](https://jquery.com/) - Highly used javascript library `3.6.0`
+- [jQuery UI](https://jqueryui.com/) - jQuery interactive addon `1.12.1`
+- [Bootstrap](https://getbootstrap.com/) - JavaScript toolkit `5.0.2-beta2`
+- [GApi](https://developers.google.com/people/quickstart/js) - Google api environment
+- [crypto-js](https://github.com/brix/crypto-js) - JavaScript crypto library `4.0.0`
+- [Lodash](https://lodash.com/) - Used JavaScript library `4.17.21`
+- [Popper](https://popper.js.org/) - Tooltip positioning engine `2.9.0`
 
-Markups
--------
+Support
+-----------
 
-The following markups are supported.  The dependencies listed are required if
-you wish to run the library. You can also run `script/bootstrap` to fetch them all.
-
-* [.markdown, .mdown, .mkdn, .md](http://daringfireball.net/projects/markdown/) -- `gem install commonmarker` (https://github.com/gjtorikian/commonmarker)
-* [.textile](https://www.promptworks.com/textile) -- `gem install RedCloth` (https://github.com/jgarber/redcloth)
-* [.rdoc](https://ruby.github.io/rdoc/) -- `gem install rdoc -v 3.6.1`
-* [.org](http://orgmode.org/) -- `gem install org-ruby` (https://github.com/wallyqs/org-ruby)
-* [.creole](http://wikicreole.org/) -- `gem install creole` (https://github.com/larsch/creole)
-* [.mediawiki, .wiki](http://www.mediawiki.org/wiki/Help:Formatting) -- `gem install wikicloth` (https://github.com/nricciar/wikicloth)
-* [.rst](http://docutils.sourceforge.net/rst.html) -- `pip install docutils`
-* [.asciidoc, .adoc, .asc](http://asciidoc.org/) -- `gem install asciidoctor` (http://asciidoctor.org)
-* [.pod](http://search.cpan.org/dist/perl/pod/perlpod.pod) -- `Pod::Simple::XHTML`
-  comes with Perl >= 5.10. Lower versions should install Pod::Simple from CPAN.
-  
-  
-## Tech
-
-Dillinger uses a number of open source projects to work properly:
-
-- [AngularJS] - HTML enhanced for web apps!
-- [Ace Editor] - awesome web-based text editor
-- [markdown-it] - Markdown parser done right. Fast and easy to extend.
-- [Twitter Bootstrap] - great UI boilerplate for modern web apps
-- [node.js] - evented I/O for the backend
-- [Express] - fast node.js network app framework [@tjholowaychuk]
-- [Gulp] - the streaming build system
-- [Breakdance](https://breakdance.github.io/breakdance/) - HTML
-to Markdown converter
-- [jQuery] - duh
-
-| Plugin | README |
+| Browser | Support |
 | ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
-| GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| Edge    | :white_check_mark: >= 81|
+| Chrome  | :white_check_mark: >= 85|
+| Firefox | :white_check_mark: >= 72|
+| Opera   | :white_check_mark: >= 71|
+| Safari  | :x:|
+| Yandex  | :x:|
 
-This will create the dillinger image and pull in the necessary dependencies.
-Be sure to swap out `${package.json.version}` with the actual
-version of Dillinger.
-
-> Note: `--capt-add=SYS-ADMIN` is required for PDF rendering.
-
-
-   [dill]: <https://github.com/joemccann/dillinger>
-   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
-   [john gruber]: <http://daringfireball.net>
-   [df1]: <http://daringfireball.net/projects/markdown/>
-   [markdown-it]: <https://github.com/markdown-it/markdown-it>
-   [Ace Editor]: <http://ace.ajax.org>
-   [node.js]: <http://nodejs.org>
-   [Twitter Bootstrap]: <http://twitter.github.com/bootstrap/>
-   [jQuery]: <http://jquery.com>
-   [@tjholowaychuk]: <http://twitter.com/tjholowaychuk>
-   [express]: <http://expressjs.com>
-   [AngularJS]: <http://angularjs.org>
-   [Gulp]: <http://gulpjs.com>
-   
-   https://img.shields.io/github/stars/oskarbukovsky/NetOS.svg?style=social&label=Star
-   https://img.shields.io/github/followers/Sangwan5688.svg?style=social&label=Follow
-   https://img.shields.io/github/forks/Sangwan5688/BlackHole.svg?style=social&label=Forks
-```
+> Lower browser versions may work, but this has not been tested yet.
 
 Installation
 -----------
 
-```
+```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
     integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
     crossorigin="anonymous" />
@@ -152,13 +101,13 @@ Usage
 
 Basic form:
 
-```
+```javascript
 let environment = new NetOS();
 ```
 
 Better form:
 
-```
+```javascript
 let environment = new NetOS({
     $loadModules: [{login:true}]
 });
