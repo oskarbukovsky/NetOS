@@ -4,7 +4,7 @@ var pwaCardDetails = pwaCard.querySelector('.card__details');
 var detailsShown = false;
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/NetOS/public/sw.js')
+  navigator.serviceWorker.register('/sw.js')
     .then(function() {
       console.log('SW registered');
     });
