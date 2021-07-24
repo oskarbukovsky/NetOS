@@ -5,7 +5,8 @@
       {
         "src": "/NetOS/files/imgs/demo.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "512x512",
+        "purpose": "any maskable"
       }
     ],
     "start_url": "/?source=pwa",
@@ -26,7 +27,7 @@
         "short_name": "Tomorrow",
         "description": "View weather information for tomorrow",
         "url": "/tomorrow?source=pwa",
-        "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512" }]
+        "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512", "purpose": "any maskable" }]
       }
     ],
     "description": "Weather forecast information",
@@ -34,12 +35,14 @@
       {
         "src": "/NetOS/files/imgs/demo.png",
         "type": "image/png",
-        "sizes": "512x512"
+        "sizes": "512x512",
+        "purpose": "any maskable"
       },
       {
         "src": "/NetOS/files/imgs/demo.png",
         "type": "image/jpg",
-        "sizes": "512x512"
+        "sizes": "512x512",
+        "purpose": "any maskable"
       }
     ]
   }
