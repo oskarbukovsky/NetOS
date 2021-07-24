@@ -28,7 +28,7 @@ console.log(`Is scope strict: ${(function () { return !this; })()}`);
 
 //PWA
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/NetOS/files/js/sw.js')
+    navigator.serviceWorker.register('/NetOS/files/sw.js')
         .then(function () {
             console.log('SW registered');
         });

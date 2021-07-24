@@ -3,7 +3,7 @@
     "short_name": "NetOS",
     "description": "NetOS client",
     "start_url": ".",
-    "scope": "/NetOS/files/js",
+    "scope": ".",
     "url": "./NetOS/netos.test.html?source=pwa",
     "display": "fullscreen",
     "orientation": "portrait",
