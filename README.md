@@ -53,8 +53,8 @@ to Markdown converter
 | GitHub | [plugins/github/README.md][PlGh] :heavy_check_mark:|
 | Google Drive | [plugins/googledrive/README.md][PlGd] :x:|
 | OneDrive | [plugins/onedrive/README.md][PlOd] :black_square_button:|
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+| Medium | [plugins/medium/README.md][PlMe] :black_square_button:|
+| Google Analytics | [plugins/googleanalytics/README.md][PlGa] :white_large_square:|
 
 This will create the dillinger image and pull in the necessary dependencies.
 Be sure to swap out `${package.json.version}` with the actual
