@@ -5,7 +5,7 @@
       {
         "src": "/files/imgs/demo.png",
         "type": "image/png",
-        "sizes": "256x256"
+        "sizes": "1920x1080"
       }
     ],
     "start_url": "/?source=pwa",
@@ -19,14 +19,14 @@
         "short_name": "Today",
         "description": "View weather information for today",
         "url": "/today?source=pwa",
-        "icons": [{ "src": "/files/imgs/demo.png", "sizes": "256x256" }]
+        "icons": [{ "src": "/files/imgs/demo.png", "sizes": "1920x1080" }]
       },
       {
         "name": "How's weather tomorrow?",
         "short_name": "Tomorrow",
         "description": "View weather information for tomorrow",
         "url": "/tomorrow?source=pwa",
-        "icons": [{ "src": "/files/imgs/demo.png", "sizes": "256x256" }]
+        "icons": [{ "src": "/files/imgs/demo.png", "sizes": "1920x1080" }]
       }
     ],
     "description": "Weather forecast information",
@@ -34,12 +34,12 @@
       {
         "src": "/files/imgs/demo.png",
         "type": "image/png",
-        "sizes": "256x256"
+        "sizes": "1920x1080"
       },
       {
         "src": "/files/imgs/demo.png",
         "type": "image/jpg",
-        "sizes": "256x256"
+        "sizes": "1920x1080"
       }
     ]
   }
