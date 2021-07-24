@@ -1,7 +1,7 @@
 {
   "name": "A basic Progressive Web App",
   "short_name": "Basic PWA",
-  "start_url": "./NetOS/public/",
+  "start_url": ".",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ccc",
