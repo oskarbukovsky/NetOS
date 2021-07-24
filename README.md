@@ -10,12 +10,12 @@ Technology
 -----------
 
 - [Font Awesome](https://fontawesome.com/) - Awesome font gadgets `5.15.2`
-- [jQuery UI](https://jqueryui.com/) - jQuery interactive addon `1.12.1`
-- [Lodash](https://lodash.com/) - Used JavaScript library `4.17.21`
-- [GApi](https://developers.google.com/people/quickstart/js) - Google api environment
 - [jQuery](https://jquery.com/) - Highly used javascript library `3.6.0`
+- [jQuery UI](https://jqueryui.com/) - jQuery interactive addon `1.12.1`
 - [Bootstrap](https://getbootstrap.com/) - JavaScript toolkit `5.0.2-beta2`
+- [GApi](https://developers.google.com/people/quickstart/js) - Google api environment
 - [crypto-js](https://github.com/brix/crypto-js) - JavaScript crypto library `4.0.0`
+- [Lodash](https://lodash.com/) - Used JavaScript library `4.17.21`
 - [Popper](https://popper.js.org/) - Tooltip positioning engine `2.9.0`
 
 Support
