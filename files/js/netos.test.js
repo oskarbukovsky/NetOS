@@ -28,6 +28,9 @@ console.log(`Is scope strict: ${(function () { return !this; })()}`);
 
 //PWA
 /* Only register a service worker if it's supported */
+const divInstall = document.getElementById('installContainer');
+const butInstall = document.getElementById('butInstall');
+
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./files/js/service-worker.js');
 }
@@ -38,13 +41,33 @@ window.addEventListener('beforeinstallprompt', (event) => {
     window.deferredPrompt = event;
     // Remove the 'hidden' class from the install button container
     divInstall.classList.toggle('hidden', false);
-  });
+});
+butInstall.addEventListener('click', async () => {
+    console.log('👍', 'butInstall-clicked');
+    const promptEvent = window.deferredPrompt;
+    if (!promptEvent) {
+        // The deferred prompt isn't available.
+        return;
+    }
+    // Show the install prompt.
+    promptEvent.prompt();
+    // Log the result
+    const result = await promptEvent.userChoice;
+    console.log('👍', 'userChoice', result);
+    // Reset the deferred prompt variable, since
+    // prompt() can only be called once.
+    window.deferredPrompt = null;
+    // Hide the install button.
+    divInstall.classList.toggle('hidden', true);
+});
 
 class NetOS {
-    config = {  modules:[   {name: "login", isActive: false, src: "./files/js/modules/Login/main.js"},
-                            {name: "spipa", isActive: false, src: "./files/js/modules/Spipa/main.js"},
-                            {name: "OAuth", isActive: false, src: "./files/js/modules/OAuth/main.js"}],
-                number:1};
+    config = {
+        modules: [{ name: "login", isActive: false, src: "./files/js/modules/Login/main.js" },
+        { name: "spipa", isActive: false, src: "./files/js/modules/Spipa/main.js" },
+        { name: "OAuth", isActive: false, src: "./files/js/modules/OAuth/main.js" }],
+        number: 1
+    };
     loadModules($modules) {
         this.config.modules.forEach(modules => {
             $modules.forEach($modules => {
@@ -53,7 +76,7 @@ class NetOS {
                 }
             });
         });
-        this.config.modules.filter(obj => {return obj.isActive !== false;}).forEach(current => {
+        this.config.modules.filter(obj => { return obj.isActive !== false; }).forEach(current => {
             var module = document.createElement("script");
             document.head.appendChild(module);
             module.src = current.src;
@@ -62,12 +85,12 @@ class NetOS {
     build() {
         eval();
     }
-    constructor($modules = {$loadModules: []}) {
+    constructor($modules = { $loadModules: [] }) {
         this.loadModules($modules.$loadModules);
         this.build();
     }
 }
 //zkurveninu hnusnou, 
 let environment = new NetOS({
-    $loadModules: [{login:true}]
+    $loadModules: [{ login: true }]
 });
