@@ -48,7 +48,7 @@ class NetOS {
     build() {
         eval();
     }
-    constructor($modules = []) {
+    constructor($modules = {$loadModules: []}) {
         this.loadModules($modules.$loadModules);
         this.build();
     }
