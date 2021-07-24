@@ -7,7 +7,8 @@ self.addEventListener('install', function (event) {
         // cache.add('/index.html');
         // cache.add('/src/js/app.js');
         cache.addAll([
-          '.'
+          '.',
+          'https://winaero.com/blog/wp-content/uploads/2019/06/WIndows-Terminal-icon.png'
         ]);
       })
   );
