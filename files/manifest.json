@@ -3,6 +3,8 @@
     "short_name": "NetOS",
     "description": "NetOS client",
     "start_url": ".",
+    "scope": ".",
+    "url": "./NetOS/netos.test.html?source=pwa",
     "display": "fullscreen",
     "orientation": "portrait",
     "theme_color": "#0033dd",
@@ -19,7 +21,6 @@
         "name": "NetOS shortcut1",
         "short_name": "NetOS1",
         "description": "NetOS client 1",
-        "url": "/NetOS/netos.test.html?source=pwa1",
         "icons": [
           {
             "src": "/NetOS/files/imgs/icon-512x512.png",
@@ -33,7 +34,6 @@
         "name": "NetOS shortcut2",
         "short_name": "NetOS2",
         "description": "NetOS client2",
-        "url": "/NetOS/netos.test.html?source=pwa2",
         "icons": [
           {
             "src": "/NetOS/files/imgs/icon-512x512.png",
