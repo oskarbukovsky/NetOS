@@ -18,13 +18,8 @@ self.addEventListener('activate', function () {
 self.addEventListener('fetch', function(event) {
   console.log("SW Fetch");
   event.respondWith(
-    caches.match(event.request)
-      .then(function(res) {
-        if (res) {
-          return res;
-        } else {
-          return fetch(event.request);
-        }
-      })
+    fetch(event.request).catch(function() {
+      return caches.match(event.request);
+    })
   );
 });

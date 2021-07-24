@@ -1,0 +1,57 @@
+{
+    "name": "NetOS client",
+    "short_name": "NetOS",
+    "description": "NetOS client",
+    "start_url": "netos.test.html?source=pwa",
+    "scope": ".",
+    "url": "netos.test.html?source=pwa0",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "theme_color": "#0033dd",
+    "background_color": "#003366",
+    "icons": [
+      {
+        "src": "/NetOS/files/imgs/icon_512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "shortcuts": [
+      {
+        "name": "Clean screen",
+        "short_name": "NetOS",
+        "description": "NetOS client",
+        "url": "/NetOS/netos.test.html?source=pwa1",
+        "icons": [
+          {
+            "src": "/NetOS/files/imgs/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+        ]
+      },
+      {
+        "name": "Google",
+        "short_name": "NetOS",
+        "_comment": "Na samsungu je short",
+        "description": "NetOS client",
+        "url": "/NetOS/netos.test.html?source=pwa2",
+        "icons": [
+          {
+            "src": "/NetOS/files/imgs/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+        ]
+      }
+    ],
+    "protocol_handlers": [
+      {
+        "protocol": "web+netos",
+        "url": "/NetOS/netos.test.html?source=protocol&data=%s"
+      }
+    ]
+  }
