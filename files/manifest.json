@@ -1,48 +1,48 @@
 {
-    "short_name": "Weather",
-    "name": "Weather: Do I need an umbrella?",
+    "name": "NetOS",
+    "short_name": "NetOS",
+    "description": "NetOS client",
+    "start_url": ".",
+    "scope": ".",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "theme_color": "#0033dd",
     "icons": [
       {
-        "src": "/NetOS/files/imgs/demo.png",
-        "type": "image/png",
+        "src": "/NetOS/files/imgs/icon_512x512.png",
         "sizes": "512x512",
+        "type": "image/png",
         "purpose": "any maskable"
       }
     ],
-    "start_url": "../netos.test.html",
-    "background_color": "#3367D6",
-    "display": "fullscreen",
-    "scope": "/",
-    "theme_color": "#3367D6",
     "shortcuts": [
       {
-        "name": "How's weather today?",
-        "short_name": "Today",
-        "description": "View weather information for today",
-        "url": "/NetOS/netos.test.html/today?source=pwa",
-        "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512" }]
+        "name": "NetOS shortcut1",
+        "short_name": "NetOS1",
+        "description": "NetOS client 1",
+        "url": "/NetOS/netos.test.html?source=pwa1",
+        "icons": [
+          {
+            "src": "/NetOS/files/imgs/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+        ]
       },
       {
-        "name": "How's weather tomorrow?",
-        "short_name": "Tomorrow",
-        "description": "View weather information for tomorrow",
-        "url": "/NetOS/netos.test.html/tomorrow?source=pwa",
-        "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512", "purpose": "any maskable" }]
-      }
-    ],
-    "description": "Weather forecast information",
-    "screenshots": [
-      {
-        "src": "/NetOS/files/imgs/demo.png",
-        "type": "image/png",
-        "sizes": "512x512",
-        "purpose": "any maskable"
-      },
-      {
-        "src": "/NetOS/files/imgs/demo.png",
-        "type": "image/jpg",
-        "sizes": "512x512",
-        "purpose": "any maskable"
+        "name": "NetOS shortcut2",
+        "short_name": "NetOS2",
+        "description": "NetOS client2",
+        "url": "/NetOS/netos.test.html?source=pwa2",
+        "icons": [
+          {
+            "src": "/NetOS/files/imgs/icon_512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+          }
+        ]
       }
     ]
   }

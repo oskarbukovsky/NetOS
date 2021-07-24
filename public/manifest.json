@@ -1,31 +1,48 @@
 {
-  "name": "A basic Progressive Web App",
-  "short_name": "Basic PWA",
+  "name": "NetOS",
+  "short_name": "NetOS",
+  "description": "NetOS client",
   "start_url": ".",
+  "scope": ".",
   "display": "fullscreen",
   "orientation": "portrait",
-  "background_color": "#ccc",
-  "theme_color": "#5FAAE5",
+  "theme_color": "#0033dd",
   "icons": [
     {
-      "src": "/NetOS/public/src/images/icons/app-icon-96x96.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "/NetOS/public/src/images/icons/app-icon-144x144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    },
-    {
-      "src": "/NetOS/public/src/images/icons/app-icon-256x256.png",
-      "sizes": "256x256",
-      "type": "image/png"
-    },
-    {
-      "src": "/NetOS/public/src/images/icons/app-icon-512x512.png",
+      "src": "/NetOS/files/imgs/icon_512x512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "NetOS shortcut1",
+      "short_name": "NetOS1",
+      "description": "NetOS client 1",
+      "url": "/NetOS/netos.test.html?source=pwa1",
+      "icons": [
+        {
+          "src": "/NetOS/files/imgs/icon_512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
+      ]
+    },
+    {
+      "name": "NetOS shortcut2",
+      "short_name": "NetOS2",
+      "description": "NetOS client2",
+      "url": "/NetOS/netos.test.html?source=pwa2",
+      "icons": [
+        {
+          "src": "/NetOS/files/imgs/icon_512x512.png",
+          "sizes": "512x512",
+          "type": "image/png",
+          "purpose": "any maskable"
+        }
+      ]
     }
   ]
 }

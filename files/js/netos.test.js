@@ -27,39 +27,12 @@
 console.log(`Is scope strict: ${(function () { return !this; })()}`);
 
 //PWA
-/* Only register a service worker if it's supported */
-const divInstall = document.getElementById('installContainer');
-const butInstall = document.getElementById('butInstall');
-
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./files/js/service-worker.js');
+    navigator.serviceWorker.register('/NetOS/public/sw.js')
+        .then(function () {
+            console.log('SW registered');
+        });
 }
-
-window.addEventListener('beforeinstallprompt', (event) => {
-    console.log('👍', 'beforeinstallprompt', event);
-    // Stash the event so it can be triggered later.
-    window.deferredPrompt = event;
-    // Remove the 'hidden' class from the install button container
-    divInstall.classList.toggle('hidden', false);
-});
-butInstall.addEventListener('click', async () => {
-    console.log('👍', 'butInstall-clicked');
-    const promptEvent = window.deferredPrompt;
-    if (!promptEvent) {
-        // The deferred prompt isn't available.
-        return;
-    }
-    // Show the install prompt.
-    promptEvent.prompt();
-    // Log the result
-    const result = await promptEvent.userChoice;
-    console.log('👍', 'userChoice', result);
-    // Reset the deferred prompt variable, since
-    // prompt() can only be called once.
-    window.deferredPrompt = null;
-    // Hide the install button.
-    divInstall.classList.toggle('hidden', true);
-});
 
 class NetOS {
     config = {

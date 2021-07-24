@@ -1,0 +1,38 @@
+{
+  "name": "NetOS",
+  "short_name": "NetOS",
+  "description": "NetOS client",
+  "start_url": ".",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#0033dd",
+  "icons": [
+    {
+      "src": "/NetOS/files/imgs/.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "NetOS shortcut1",
+      "short_name": "NetOS1",
+      "description": "NetOS client 1",
+      "url": "/NetOS/netos.test.html?source=pwa1",
+      "icons": [{
+        "src": "/NetOS/files/imgs/.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }]
+    },
+    {
+      "name": "How's weather tomorrow?",
+      "short_name": "Tomorrow",
+      "description": "View weather information for tomorrow",
+      "url": "/NetOS/netos.test.html/tomorrow?source=pwa",
+      "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "512x512", "purpose": "any maskable" }]
+    }
+  ]
+}
