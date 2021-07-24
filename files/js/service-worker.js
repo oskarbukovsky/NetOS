@@ -19,9 +19,9 @@ self.addEventListener('activate', (event) => {
   event.waitUntil((async () => {
     // Enable navigation preload if it's supported.
     // See https://developers.google.com/web/updates/2017/02/navigation-preload
-    if ('navigationPreload' in self.registration) {
-      await self.registration.navigationPreload.enable();
-    }
+    //if ('navigationPreload' in self.registration) {
+    //  await self.registration.navigationPreload.enable();
+    //}
   })());
 
   // Tell the active service worker to take control of the page immediately.
@@ -32,7 +32,7 @@ self.addEventListener('fetch', function(event) {
   // console.log('[Service Worker] Fetch', event.request.url);
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
-      try {
+      /*try {
         const preloadResponse = await event.preloadResponse;
         if (preloadResponse) {
           return preloadResponse;
@@ -46,7 +46,7 @@ self.addEventListener('fetch', function(event) {
         //const cache = await caches.open(CACHE_NAME);
         //const cachedResponse = await cache.match(OFFLINE_URL);
         //return cachedResponse;
-      }
+      }*/
     })());
   }
 });
