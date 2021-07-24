@@ -23,19 +23,19 @@ Support
 
 | Browser | Support |
 | ------ | ------ |
-| Edge    | :white_check_mark: >= 81|
-| Chrome  | :white_check_mark: >= 85|
-| Firefox | :white_check_mark: >= 72|
-| Opera   | :white_check_mark: >= 71|
-| Safari  | :x:|
-| Yandex  | :x:|
+| Edge    | ✅ >= 81 |
+| Chrome  | ✅ >= 85 |
+| Firefox | ✅ >= 72 |
+| Opera   | ✅ >= 71 |
+| Safari  | ❌ |
+| Yandex  | ❌ |
 
 > Lower browser versions may work, but this has not been tested yet.
 
 Installation
 -----------
 
-Insert this :arrow_down: code into `<head` on your page
+Insert this ⬇️ code into `<head>` on your page
 
 ```html
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
