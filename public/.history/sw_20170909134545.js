@@ -7,11 +7,11 @@ self.addEventListener('install', function (event) {
         // cache.add('/index.html');
         // cache.add('/src/js/app.js');
         cache.addAll([
-          '/NetOS/public/',
-          '/NetOS/public/index.html',
-          '/NetOS/public/src/js/app.js',
-          '/NetOS/public/src/css/app.css',
-          '/NetOS/public/src/images/pwa.jpg',
+          '/',
+          '/index.html',
+          '/src/js/app.js',
+          '/src/css/app.css',
+          '/src/images/pwa.jpg',
           'https://fonts.googleapis.com/css?family=Raleway:400,700'
         ]);
       })
