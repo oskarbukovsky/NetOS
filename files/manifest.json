@@ -3,7 +3,7 @@
     "name": "Weather: Do I need an umbrella?",
     "icons": [
       {
-        "src": "/files/imgs/demo.png",
+        "src": "/NetOS/files/imgs/demo.png",
         "type": "image/png",
         "sizes": "256x256"
       }
@@ -19,25 +19,25 @@
         "short_name": "Today",
         "description": "View weather information for today",
         "url": "/today?source=pwa",
-        "icons": [{ "src": "/files/imgs/demo.png", "sizes": "256x256" }]
+        "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "256x256" }]
       },
       {
         "name": "How's weather tomorrow?",
         "short_name": "Tomorrow",
         "description": "View weather information for tomorrow",
         "url": "/tomorrow?source=pwa",
-        "icons": [{ "src": "/files/imgs/demo.png", "sizes": "256x256" }]
+        "icons": [{ "src": "/NetOS/files/imgs/demo.png", "sizes": "256x256" }]
       }
     ],
     "description": "Weather forecast information",
     "screenshots": [
       {
-        "src": "/files/imgs/demo.png",
+        "src": "/NetOS/files/imgs/demo.png",
         "type": "image/png",
         "sizes": "256x256"
       },
       {
-        "src": "/files/imgs/demo.png",
+        "src": "/NetOS/files/imgs/demo.png",
         "type": "image/jpg",
         "sizes": "256x256"
       }
