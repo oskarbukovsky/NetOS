@@ -1,7 +1,7 @@
 {
   "name": "A basic Progressive Web App",
   "short_name": "Basic PWA",
-  "start_url": "/NetOS/public/",
+  "start_url": "./NetOS/public/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#ccc",
@@ -13,7 +13,7 @@
       "type": "image/png"
     },
     {
-      "src": "/NetOS/public/rc/images/icons/app-icon-144x144.png",
+      "src": "/NetOS/public/src/images/icons/app-icon-144x144.png",
       "sizes": "144x144",
       "type": "image/png"
     },
