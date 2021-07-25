@@ -34,6 +34,13 @@ if ('serviceWorker' in navigator) {
         });
 }
 
+let deferredPrompt;
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    console.log(e);
+    deferredPrompt = e;
+});
+
 document.getElementById("butInstall").addEventListener('click', async () => {
     if (deferredPrompt !== null) {
         deferredPrompt.prompt();
