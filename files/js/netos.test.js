@@ -34,6 +34,16 @@ if ('serviceWorker' in navigator) {
         });
 }
 
+document.getElementById("butInstall").addEventListener('click', async () => {
+    if (deferredPrompt !== null) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        if (outcome === 'accepted') {
+            deferredPrompt = null;
+        }
+    }
+});
+
 class NetOS {
     config = {
         modules: [{ name: "login", isActive: false, src: "./files/js/modules/Login/main.js" },
