@@ -118,6 +118,6 @@ let environment = new NetOS({
 Demo
 -----
 
-[![Demo](https://raw.githubusercontent.com/oskarbukovsky/NetOS/main/files/imgs/demo.PNG)](https://oskarbukovsky.github.io/NetOS/netos-old.html)
+[![Demo](https://raw.githubusercontent.com/oskarbukovsky/NetOS/main/files/imgs/demo.png)](https://oskarbukovsky.github.io/NetOS/netos-old.html)
 
 > Click to image to view demo
